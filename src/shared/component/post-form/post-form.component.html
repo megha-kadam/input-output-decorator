@@ -1,0 +1,25 @@
+<h2 class="text-center">Post Form</h2>
+<div class="card">
+    <div class="card-body">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" #title class="form-control">
+        </div>
+         <div class="form-group">
+            <label for="content">Content</label>
+            <textarea type="text" #content class="form-control"></textarea>
+        </div>
+         <div class="form-group">
+            <label for="UserId">UserId</label>
+            <select type="text" #userId class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="34">34</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <button class="btn btn-block btn-outline-primary" (click)="onPostAdd()">Add Post</button>
+    </div>
+</div>

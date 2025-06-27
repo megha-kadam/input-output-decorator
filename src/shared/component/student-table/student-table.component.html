@@ -1,0 +1,26 @@
+<h2 class="text-center">Student Table</h2>
+<div class="card">
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Seriol No</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let std of stdtable; index as i">
+                    <td>{{i + 1}}</td>
+                    <td>{{std.fName}}</td>
+                    <td>{{std.lName}}</td>
+                    <td>{{std.email}}</td>
+                    <td>{{std.contact}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
