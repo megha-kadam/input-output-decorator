@@ -11,9 +11,21 @@ import { StudentComponent } from 'src/shared/component/student-dashboard/student
 import { PostComponent } from 'src/shared/component/post-dashboard/post-dashboard.component';
 import { PostCardComponent } from 'src/shared/component/post-card/post-card.component';
 import { PostFormComponent } from 'src/shared/component/post-form/post-form.component';
+import { CricketerComponent } from 'src/shared/component/cricketer-dashboard/cricketer-dashboard.component';
+import { CricketerTableComponent } from 'src/shared/component/cricketer-table/cricketer-table.component';
+import { CricketerFormComponent } from 'src/shared/component/cricketer-form/cricketer-form.component';
+import { ProductComponent } from 'src/shared/component/product-dashboard/product-dashboard.component';
+import { ProductListComponent } from 'src/shared/component/product-list/product-list.component';
+import { ProductFormComponent } from 'src/shared/component/product-form/product-form.component';
 
 @NgModule({
   declarations: [
+    ProductComponent,
+    ProductListComponent,
+    ProductFormComponent,
+    CricketerComponent,
+    CricketerTableComponent,
+    CricketerFormComponent,
     PostComponent,
     PostCardComponent,
     PostFormComponent,

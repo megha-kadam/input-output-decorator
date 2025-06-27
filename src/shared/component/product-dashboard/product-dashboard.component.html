@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <app-productform  (product)="addProduct($event)"> </app-productform>
+        </div>
+        <div class="col-md-6">
+            <app-productList [productList]="productArr"></app-productList>
+        </div>
+    </div>
+</div>
+

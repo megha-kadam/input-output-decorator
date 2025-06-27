@@ -1,0 +1,27 @@
+<h2 class="text-center">Cricketer Table</h2>
+<div class="card">
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Seriol No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Team</th>
+                    <th>Role</th>
+                    <th>MatchesPlayed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let crick of cricketer; index as i">
+                    <td>{{i + 1}}</td>
+                    <td>{{crick.name}}</td>
+                    <td>{{crick.age}}</td>
+                    <td>{{crick.team}}</td>
+                    <td>{{crick.role}}</td>
+                    <td>{{crick.matchesPlayed}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
