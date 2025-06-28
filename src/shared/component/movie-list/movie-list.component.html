@@ -1,0 +1,14 @@
+<h2 class="text-center">Movies List</h2>
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between" *ngFor="let movie of movieList">
+                <strong>{{movie.movieTitle}}</strong>
+                <div>
+                    <button class="btn-sm btn btn-outline-info mr-3">Edit</button>
+                    <button class="btn-sm btn btn-outline-danger">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -17,7 +17,9 @@ export class CricketerFormComponent{
   constructor(){}
 
   onAddCrick(){
-    let crickObj : Icrick = {
+   if(this.name.nativeElement.value = this.age.nativeElement.value = this.team.nativeElement.value = 
+    this.role.nativeElement.value = this.matches.nativeElement.value){
+     let crickObj : Icrick = {
         name : this.name.nativeElement.value,
         age : this.age.nativeElement.value,
         team : this.team.nativeElement.value,
@@ -27,6 +29,7 @@ export class CricketerFormComponent{
     console.log(crickObj);
 
     this.crick.emit(crickObj)
+   }
 
     this.name.nativeElement.value = this.age.nativeElement.value = this.team.nativeElement.value = 
     this.role.nativeElement.value = this.matches.nativeElement.value = ""

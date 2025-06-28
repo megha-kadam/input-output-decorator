@@ -14,12 +14,14 @@ export class ProductFormComponent{
     constructor(){}
 
     onAddProduct(){
-        let obj : Iproduct = {
+       if(this.pName.nativeElement.value){
+         let obj : Iproduct = {
             pName : this.pName.nativeElement.value
         }
         console.log(obj);
 
         this.product.emit(obj);
+       }
 
         this.pName.nativeElement.value = "";
     }

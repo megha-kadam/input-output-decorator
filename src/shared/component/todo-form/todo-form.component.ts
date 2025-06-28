@@ -14,11 +14,13 @@ export class TodoformComponent{
 
     }
     onAddTodo(){
-        let todoObj : Itodo = {
+        if(this.todoItem.nativeElement.value){
+            let todoObj : Itodo = {
             todoItem : this.todoItem.nativeElement.value
         }
         console.log(todoObj);
         this.addTodo.emit(todoObj)
+        }
 
         this.todoItem.nativeElement.value = ""
     }

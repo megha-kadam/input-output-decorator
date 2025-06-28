@@ -19,7 +19,9 @@ export class StudentFormComponent{
     }
 
     onAddStd(){
-        let stdObj : Istd = {
+        if(this.fName.nativeElement.value = this.lName.nativeElement.value = this.email.nativeElement.value =
+        this.contact.nativeElement.value ){
+            let stdObj : Istd = {
             fName : this.fName.nativeElement.value,
             lName : this.lName.nativeElement.value,
             email : this.email.nativeElement.value,
@@ -28,6 +30,7 @@ export class StudentFormComponent{
         console.log(stdObj);
 
         this.stdForm.emit(stdObj)
+        }
 
         this.fName.nativeElement.value = this.lName.nativeElement.value = this.email.nativeElement.value =
         this.contact.nativeElement.value = ""

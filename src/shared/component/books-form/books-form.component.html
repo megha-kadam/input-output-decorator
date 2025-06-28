@@ -1,0 +1,23 @@
+<h2 class="text-center">Book Form</h2>
+<div class="card">
+    <div class="card-body">
+        <div class="form-group">
+            <label for="bookTitle">Book Title<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" #bookTitle>
+        </div>
+         <div class="form-group">
+            <label for="author">Author<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" #author>
+        </div>
+         <div class="form-group">
+            <label for="genre">Genre<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" #genre>
+        </div>
+         <div class="form-group">
+            <label for="year">Year<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" #year>
+        </div>
+
+        <button class="btn btn-block btn-outline-primary" (click)="onAddBook()">Add Books</button>
+    </div>
+</div>

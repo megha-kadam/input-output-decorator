@@ -1,0 +1,10 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <app-booksForm (bookForm)="addbookobj($event)"></app-booksForm>
+        </div>
+        <div class="col-md-8">
+            <app-booksTable [booksTable]="booksArr"></app-booksTable>
+        </div>
+    </div>
+</div>
