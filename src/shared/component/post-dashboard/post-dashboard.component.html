@@ -1,13 +1,14 @@
 <div class="container mt-5">
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-md-8 offset-md-2">
             <app-postForm (onEmitPost)="addPost($event)"></app-postForm>
         </div>
     </div>
-    <!-- <div class="row">
-      <h2 class="text-center">Post Card </h2>
+
+    <h2 class="text-center">Post Card </h2>
+    <div class="row">
           <div class="col-md-4 mb-3" *ngFor="let post of postsArr">
             <app-postCard [postcard]="post"></app-postCard>
           </div>
-        </div> -->
+        </div>
     </div>

@@ -7,5 +7,5 @@ import { Ipost } from "src/models/post.interface";
     styleUrls : ["./post-card.component.scss"]
 })
 export class PostCardComponent{
-  @Input()  postcard !: Array<Ipost>
+  @Input()  postcard !: Ipost;
 }
